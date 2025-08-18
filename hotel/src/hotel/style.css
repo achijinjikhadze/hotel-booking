@@ -1,0 +1,115 @@
+/* root wind */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #1a1a2e, #16213e);
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #f0f0f0;
+}
+
+/* title bar */
+.label {
+    -fx-text-fill:  #8f94fb;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill:  #4e54c8;  
+    -fx-font-weight: bold; 
+	
+}
+.column-header{
+	-fx-font-size:16px
+}
+/* btn */
+.button {
+    -fx-background-color: linear-gradient(to right, #4e54c8, #8f94fb);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #5d63d8, #a0a5ff);
+}
+
+/* TtextFields, comboBox */
+.text-field, .combo-box, .date-picker {
+    -fx-background-color: #454563;
+    -fx-text-fill: #f0f0f0;
+    -fx-background-radius: 6;
+    -fx-border-color: #444;
+    -fx-border-radius: 6;
+	
+}
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #8f94fb;
+    -fx-effect: dropshadow(gaussian, #4e54c8, 5, 0.2, 0, 0);
+}
+
+/* filter bar hBox */
+#filterBox {
+    -fx-background-color: rgba(255,255,255,0.05);
+    -fx-padding: 12;
+    -fx-spacing: 15;
+    -fx-background-radius: 0;
+	-fx-border-width: 4;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-radius: 0;
+}
+
+/* main layout */
+#mainLayout {
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+/* table */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-width: 4;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #2b2b45, #1f1f33);
+    -fx-background-radius: 10 10 0 0;
+}
+
+
+.table-view .column-header,
+.table-view .table-cell {
+    -fx-border-color: rgba(255,255,255,0.05);
+    -fx-padding: 8;
+    -fx-text-fill: #e0e0e0;
+    -fx-alignment: center; 
+	
+}
+
+
+.table-view .column-header .label {
+    -fx-alignment: center;
+
+}
+
+
+.table-row-cell {
+    -fx-background-color: transparent;
+	-fx-font-size:15px;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #4e54c8;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgba(255,255,255,0.03);
+}
+
+.table-row-cell:even {
+    -fx-background-color: transparent;
+}
